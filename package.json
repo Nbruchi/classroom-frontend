@@ -85,9 +85,9 @@
     "vite": "^6.3.5"
   },
   "scripts": {
-    "dev": "refine dev",
-    "build": "tsc && refine build",
-    "start": "refine start",
+    "dev": "node init && refine dev",
+    "build": "node init && tsc && refine build",
+    "start": "node init && refine start",
     "refine": "refine"
   },
   "browserslist": {
