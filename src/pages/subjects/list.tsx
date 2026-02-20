@@ -61,9 +61,9 @@ const SubjectsList = () => {
                 },
                 {
                     id: "department",
-                    accessorKey: "department",
-                    header: () => <p className="column-title">Department</p>,
+                    accessorKey: "department.name",
                     size: 150,
+                    header: () => <p className="column-title">Department</p>,
                     cell: ({ getValue }) => (
                         <Badge variant="secondary">{getValue<string>()}</Badge>
                     ),
