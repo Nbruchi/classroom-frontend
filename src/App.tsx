@@ -14,7 +14,7 @@ import { ThemeProvider } from "./components/refine-ui/theme/theme-provider";
 import { dataProvider } from "./providers/data";
 import Dashboard from "./pages/dashboard";
 import { Layout } from "./components/refine-ui/layout/layout";
-import { BookOpen, GraduationCap, Home } from "lucide-react";
+import { BookOpen, GraduationCap, Home, Users } from "lucide-react";
 import SubjectsList from "./pages/subjects/list";
 import SubjectsCreate from "./pages/subjects/create";
 import ClassesList from "./pages/classes/list";
@@ -53,6 +53,25 @@ function App() {
                                     name: "classes",
                                     list: "/classes",
                                     create: "/classes/create",
+                                    meta: {
+                                        label: "Classes",
+                                        icon: <GraduationCap />,
+                                    },
+                                },
+                                {
+                                    name: "users",
+                                    list: "/faculty",
+                                    show: "/faculty/show/:id",
+                                    meta: {
+                                        label: "Faculty",
+                                        icon: <Users />,
+                                    },
+                                },
+                                {
+                                    name: "classes",
+                                    list: "/classes",
+                                    create: "/classes/create",
+                                    show: "/classes/show/:id",
                                     meta: {
                                         label: "Classes",
                                         icon: <GraduationCap />,
